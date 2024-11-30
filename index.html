@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин Sony</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+
+        <div class="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <nav id="mobile-menu">
+          <ul>
+            <li><a href="#cameras">Камеры</a></li>
+            <li><a href="#lenses">Объективы</a></li>
+            <li><a href="#tripods">Штативы</a></li>
+            <li><a href="#cart">Корзина</a></li>
+          </ul>
+        </nav>
+
+      <img src="img/pngwing.com.png" width="100px" margin-top: 20px; alt="Логотип Sony">
+      <p>Мы предлагаем качественную технику уже <span id="years-in-business"></span> лет!</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Камеры</h2>
+      <div class="products">
+        <div class="product">
+          <img src="img/ultrahd.su-Sony-ILCE-7M3-obzor.jpg" alt="Камера 1">
+          <h3>Камера Sony Alpha A7 III</h3>
+          <p>Цена: 120,000 ₽</p>
+          <button onclick="addToCart(this)">Добавить в корзину</button>
+        </div>
+        <div class="product">
+          <img src="img/6d3b2fcbd3cd9f38bcc2867c8824df1b.jpg" alt="Камера 2">
+          <h3>Камера Sony Alpha A6600</h3>
+          <p>Цена: 90,000 ₽</p>
+          <button onclick="addToCart(this)">Добавить в корзину</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Объективы</h2>
+      <div class="products">
+        <div class="product">
+          <img src="img/6d3b2fcbd3cd9f38bcc2867c8824df1b.jpg" alt="Объектив 1">
+          <h3>Объектив Sony FE 50mm</h3>
+          <p>Цена: 50,000 ₽</p>
+          <button onclick="addToCart(this)">Добавить в корзину</button>
+        </div>
+        <div class="product">
+          <img src="img/1997.970.jpg" alt="Объектив 2">
+          <h3>Объектив Sony FE 85mm</h3>
+          <p>Цена: 70,000 ₽</p>
+          <button onclick="addToCart(this)">Добавить в корзину</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Штативы</h2>
+      <div class="products">
+        <div class="product">
+          <img src="img/T2oE_MXcBaXXXXXXXX_!!1602616738.png" alt="Штатив 1">
+          <h3>Штатив Sony VCT-VPR1</h3>
+          <p>Цена: 8,000 ₽</p>
+          <button onclick="addToCart(this)">Добавить в корзину</button>
+        </div>
+        <div class="product">
+          <img src="img/f_1424010.jpg" alt="Штатив 2">
+          <h3>Штатив Sony VCT-R640</h3>
+          <p>Цена: 6,000 ₽</p>
+          <button onclick="addToCart(this)">Добавить в корзину</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart">
+      <h2>Корзина</h2>
+      <ul id="cart-items"></ul>
+      <p class="total">Общая стоимость: 0 ₽</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
